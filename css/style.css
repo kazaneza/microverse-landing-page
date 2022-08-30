@@ -1,3 +1,21 @@
+/* nav-bar style */
+header {
+  height: 10em;
+  display: flex;
+  justify-content: center;
+}
+#nav-bar {
+  position: fixed;
+  margin-left: -80em;
+}
+a {
+  color: black;
+}
+#header-img {
+  margin: 4em 0;
+}
+/* landing page styles */
+
 .container {
   font-family: sans-serif;
   width: 90%;

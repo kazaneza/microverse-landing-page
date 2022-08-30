@@ -12,8 +12,29 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
+    <script
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+      defer
+    ></script>
   </head>
   <body>
+    <header id="header">
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#form" class="nav-link">Form</a></li>
+          <li><a href="#services_section" class="nav-link">Services</a></li>
+          <li><a href="#prices" class="nav-link">Prices</a></li>
+          <li><a href="#footer" class="nav-link">Footer</a></li>
+        </ul>
+      </nav>
+      <div id="image">
+        <img
+          src="data:image/png;base64,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"
+          alt=""
+          id="header-img"
+        />
+      </div>
+    </header>
     <div class="container">
       <h2>Handcrafted, home-made masterpieces</h2>
       <form
@@ -29,7 +50,7 @@
         />
         <input type="submit" value="get started" id="submit" />
       </form>
-      <section class="services">
+      <section class="services" id="services_section">
         <div class="premium desc-container">
           <div class="premium-icon icons">
             <i class="fa fa-3x fa-fire"></i>
@@ -77,7 +98,7 @@
         >
         </iframe>
       </section>
-      <article class="prices">
+      <article class="prices" id="prices">
         <div class="trombones_car price_container">
           <h2 class="price_tag">Trombone lorem</h2>
           <h2 class="dollar">$600</h2>
@@ -98,5 +119,6 @@
         </div>
       </article>
     </div>
+    <footer id="footer">&copy; 2022 available on github</footer>
   </body>
 </html>
